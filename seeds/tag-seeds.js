@@ -1,3 +1,9 @@
+/**
+ * /seeds/tag-seeds.js
+ *
+ * @description: seeds data for tag table
+ *
+ */
 const { Tag } = require('../models');
 
 const tagData = [

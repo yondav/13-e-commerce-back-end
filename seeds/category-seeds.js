@@ -1,3 +1,10 @@
+/**
+ * /seeds/category-seeds.js
+ *
+ * @description: seeds data for category table
+ *
+ */
+
 const { Category } = require('../models');
 
 const categoryData = [

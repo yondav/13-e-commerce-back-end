@@ -1,3 +1,10 @@
+/**
+ * /seeds/product-seeds.js
+ *
+ * @description: seeds data for product table
+ *
+ */
+
 const { Product } = require('../models');
 
 const productData = [
