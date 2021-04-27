@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Tag, Product, ProductTag } = require('../../models');
+const { Tag, Product, ProductTag, Category } = require('../../models');
 
 // The `/api/tags` endpoint
 
@@ -40,8 +40,23 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.put('/:id', (req, res) => {
-  // update a tag's name by its `id` value
+router.put('/:id', async (req, res) => {
+  try {
+    const tagData = await Tag.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+
+    if (!tagData) {
+      res.status(404).json({ message: `No tag found with id: ${req.params.id}!` });
+      return;
+    } else {
+      res.json(tagData);
+    }
+  } catch (err) {
+    res.status(500).json;
+  }
 });
 
 router.delete('/:id', (req, res) => {
