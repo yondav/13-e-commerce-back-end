@@ -23,6 +23,7 @@ Ecommerce Back End is a simple database application made to keep track of a prod
 >     - [Schema](#schema)
 >     - [Seed](#seed)
 >     - [Start Server](#start-server)
+>   - [Live Demo](#live-demo)
 >   - [Author](#author)
 >     - [Contact](#contact)
 >   - [Contributing / Issues](#contributing--issues)
@@ -99,9 +100,9 @@ npm run watch
 
 ---
 
-### Live Demo
+## Live Demo
 
-[Video Demonstration](https://youtu.be/MNXzsxjQ-5E)
+[Video Demonstration](https://youtu.be/11qmaumlaRY)
 
 ## **GET**
 
