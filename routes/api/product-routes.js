@@ -1,7 +1,12 @@
+/**
+ * /routes/api/product-routes.js
+ *
+ * @description: the `/api/products` endpoint
+ *
+ */
+
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
-
-// The `/api/products` endpoint
 
 // get all products
 router.get('/', async (req, res) => {
@@ -120,6 +125,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
+// delete one product
 router.delete('/:id', async (req, res) => {
   try {
     const productData = await Product.destroy({

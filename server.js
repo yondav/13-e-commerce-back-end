@@ -1,7 +1,13 @@
+/**
+ * server.js
+ *
+ * @description: server
+ *
+ */
+
 const express = require('express');
 const { sequelize } = require('./models/Product');
 const routes = require('./routes');
-// import sequelize connection
 
 const app = express();
 const PORT = process.env.PORT || 3001;

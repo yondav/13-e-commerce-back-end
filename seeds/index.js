@@ -4,6 +4,7 @@
  * @description: calls all functions for seeding to seed data in correct order
  *
  */
+
 const seedCategories = require('./category-seeds');
 const seedProducts = require('./product-seeds');
 const seedTags = require('./tag-seeds');
