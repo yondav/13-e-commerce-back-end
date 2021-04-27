@@ -73,10 +73,6 @@ DB_PW=Password
 
 `db` directory holds `schema.sql` with script to create database in Workbench or from the command line.
 
-```
-npm run seed
-```
-
 ---
 
 ### Seed
